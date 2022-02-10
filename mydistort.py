@@ -19,7 +19,7 @@ def register(cb):
 class DistortNoApiMod(loader.Module):
     """distorting images"""
     strings = {
-        "name": "DistortNoApi"
+        "name": "Жмыхыч"
     }
 
     async def client_ready(self, client, db):
