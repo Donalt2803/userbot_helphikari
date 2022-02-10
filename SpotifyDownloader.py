@@ -37,7 +37,7 @@ class SpotifyDownloaderMod(loader.Module):
         """<track> - найти и сказать музыку из Spotify"""
         args = utils.get_args_raw(message)
         if not args:
-            return await utils.answer(message, "<b>❌ Нет аргументов (Укажите название музыки)</b>")
+            return await utils.answer(message, "<b>❌ Возможно, вы не указали название музыки</b>")
 
         message = await utils.answer(message, "<b>⚡️ Скачиваю...</b>")
         try:
