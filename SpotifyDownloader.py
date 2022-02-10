@@ -50,4 +50,4 @@ class SpotifyDownloaderMod(loader.Module):
                 await self.client.send_file(message.peer_id, mus.result.document, reply_to=message.reply_to_msg_id)
                 return await message.delete()
 
-        return await utils.answer(message, f"<b> Music named <code> {args} </code> not found. </b>")
+        return await utils.answer(message, f"<b>🥺 Название музыки: <code> {args} </code> не найдено. </b>")
