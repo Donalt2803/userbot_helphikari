@@ -31,7 +31,7 @@ logger = logging.getLogger(__name__)
 class HelpMod(loader.Module):
     """Cute help with Japan and foxes"""
     strings = {
-        "name": "Help",
+        "name": "Хелп",
         "bad_module": '<b>❗️ Ошибка модуля \n</b> "<code>{}</code>"',
         "single_mod_header": "<b>📄 Информация</b> <u>{}</u>:",
         "single_cmd": "\n🧊 <code>{}{}</code> 👉🏻 ",
