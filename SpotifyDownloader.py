@@ -23,7 +23,7 @@ from telethon.tl.types import *
 
 @loader.tds
 class SpotifyDownloaderMod(loader.Module):
-    """Download music from Spotify"""
+    """Скачивание музыки из Spotify"""
     strings = {
         'name': 'Музыка Spotify'
     }
@@ -34,12 +34,12 @@ class SpotifyDownloaderMod(loader.Module):
 
     @loader.unrestricted
     async def sdcmd(self, message: Message) -> None:
-        """<track> - search and download from Spotify"""
+        """<track> - найти и сказать музыку из Spotify"""
         args = utils.get_args_raw(message)
         if not args:
-            return await utils.answer(message, "<b>❌ Нет аргументов</b>")
+            return await utils.answer(message, "<b>❌ Нет аргументов (Укажите название музыки)</b>")
 
-        message = await utils.answer(message, "<b>⚡️ Скачива...</b>")
+        message = await utils.answer(message, "<b>⚡️ Скачиваю...</b>")
         try:
             message = message[0]
         except:
