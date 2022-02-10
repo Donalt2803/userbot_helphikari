@@ -38,10 +38,10 @@ class DistortNoApiMod(loader.Module):
             reply_message = await message.get_reply_message()
             data, mime = await check_media(reply_message)
             if isinstance(data, bool):
-                await utils.answer(message, "<code>Ответь на фото либо стикер</code>")
+                await utils.answer(message, "<code>❌ Ответь на сообщение с фото/стикер</code>")
                 return
         else:
-            await utils.answer(message, "<code>Ответь на фото либо стикер</code>")
+            await utils.answer(message, "<code>❌ Ответь на сообщение с фото/стикер</code>")
             return
         rescale_rate = 70
         a = utils.get_args(message)
